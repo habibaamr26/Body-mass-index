@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_app/cubit/shared.dart';
+import 'package:news_app/shared%20prefrence/shared.dart';
 import 'package:news_app/dio.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'cubit/cubit.dart';
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (BuildContext context)=>  NewsBloc()..changeThemeData(x:isdark)),
         BlocProvider(create: (BuildContext context)=>  NewsBloc()..getbusness()
           ..getsports()
-          ..getssc(),)
+          ..getSsc(),)
       ],
         child: BlocConsumer<NewsBloc, NewsStates>(
           listener: (BuildContext context, Object? state) {},

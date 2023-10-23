@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_app/cubit/shared.dart';
+import 'package:news_app/shared%20prefrence/shared.dart';
 import 'package:news_app/cubit/states.dart';
 
 import '../dio.dart';
@@ -70,7 +70,7 @@ List <Widget> Screens=[
       emit(SportsGetDatasSucces());
   }
 
-  void getssc()
+  void getSsc()
   {
     emit(SCGetDatasloading ());
     if(science.length==0) {
